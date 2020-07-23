@@ -18,10 +18,26 @@
      pre-commit install --install-hooks
      ```
 
+## Setup
+
+1. Install [docker](https://docs.docker.com/get-docker/),
+   [docker-compose](https://docs.docker.com/compose/install/) and
+   [nvidia-docker2](https://github.com/NVIDIA/nvidia-docker)
+2. Clone repo
+   ```sh
+   git clone https://github.com/NickLi0605/card_segmentation.git
+   ```
+3. Run docker-compose
+   ```sh
+   cd card_segmentation
+   docker-compose up
+   ```
+   Note: this docker image will start jupyter notebook automatically.
+
 ## Action item
 
 - Must to
-  - [ ] Construct environment with dockers
+  - [x] Construct environment with dockers
   - [ ] Scripts for download dataset, including
         [Midv2019](ftp://smartengines.com/midv-500/extra/midv-2019/) and
         [Midv500](ftp://smartengines.com/midv-500/)
