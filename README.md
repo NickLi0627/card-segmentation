@@ -33,6 +33,22 @@
    docker-compose up
    ```
    Note: this docker image will start jupyter notebook automatically.
+4. Install [pyenv](https://github.com/pyenv/pyenv-installer)
+5. Create virtual env for python with **pyenv**
+   ```sh
+   pyenv install 3.8.3
+   pyenv virtualenv 3.8.3 <venv_name> # create virtual env
+   pyenv local <venv_name>  # apply virtualenv for the project
+   ```
+6. Install dependencies
+   ```sh
+   pip install -r requirement.txt
+   ```
+7. Enable pre-commit hooks
+   ```sh
+   pip install pre-commit
+   pre-commit install
+   ```
 
 ## Action item
 
