@@ -53,10 +53,16 @@
 
 - Must to
   - [x] Construct environment with dockers
-  - [ ] Scripts for download dataset, including
-        [Midv2019](ftp://smartengines.com/midv-500/extra/midv-2019/) and
-        [Midv500](ftp://smartengines.com/midv-500/)
-  - [ ] Convert dataset into coco format
+  - [x] Download dataset
+    - [x] Download scripts for **midv2019** and **midv500**
+    - [x] Convert to coco format
+    - How to donlowad:
+      ```sh
+      git clone https://github.com/AlexLi0605/midv500
+      python run.py --dataset_dir "path to store dataset" --convert_to_coco
+      ```
+      Note: this repo is forked from [here](https://github.com/fcakyon/midv500) and add
+      download links for **midv2019**
   - [ ] Split dataset into training / validation / testing with reasons
   - [ ] Basic training & inference code with pre-trained model
   - [ ] Apply data augumentation with
