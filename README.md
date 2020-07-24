@@ -32,7 +32,9 @@
    cd card_segmentation
    docker-compose up
    ```
-   Note: this docker image will start jupyter notebook automatically.
+   Note:
+   - This docker image will start jupyter notebook automatically.
+   - You may need to replace the volume by your self in `docker-compose.yml`
 4. Install [pyenv](https://github.com/pyenv/pyenv-installer)
 5. Create virtual env for python with **pyenv**
    ```sh

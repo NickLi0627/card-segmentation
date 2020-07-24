@@ -13,6 +13,7 @@ services:
     runtime: nvidia
     volumes:
       - ./:/home/appuser/detectron2_repo/card-segmentation/
+      - /ssd/data:/data
     environment:
       - DISPLAY=$DISPLAY
       - NVIDIA_VISIBLE_DEVICES=all
