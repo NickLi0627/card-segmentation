@@ -65,7 +65,7 @@
       ```
       Note: this repo is forked from [here](https://github.com/fcakyon/midv500) and add
       download links for **midv2019**
-  - [ ] Split dataset into training / validation / testing with reasons
+  - [x] Split dataset into training / validation / testing with reasons
   - [x] Basic training & inference code with pre-trained model
   - [ ] Apply data augumentation with
         [albumentations](https://albumentations.readthedocs.io/en/latest/)
