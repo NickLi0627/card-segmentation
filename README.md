@@ -69,10 +69,10 @@
   - [x] Basic training & inference code with pre-trained model
   - [ ] Apply data augumentation with
         [albumentations](https://albumentations.readthedocs.io/en/latest/)
-  - [ ] Benchmark for different models with
-    - [ ] Inference time
-    - [ ] Model size
-    - [ ] Memory usage
+  - [x] Benchmark for different models with
+    - [x] Inference time
+    - [x] Model size
+    - [x] Memory usage
   - [ ] Demo video
 - Nice to have
   - [ ] Refactor others' codes if we use them
