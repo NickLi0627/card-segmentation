@@ -1,0 +1,19 @@
+# This docker compose yaml is provided by detectrion2.
+# Ref: https://github.com/facebookresearch/detectron2/tree/master/docker
+
+version: "2.3"
+
+services:
+  detectron2:
+    container_name: detectron2
+    build: ./
+    restart: always
+    ports:
+      - "8888:8888"
+    runtime: nvidia
+    volumes:
+      - ./:/home/appuser/detectron2_repo/card-segmentation/
+      - /ssd/data:/data
+    environment:
+      - DISPLAY=$DISPLAY
+      - NVIDIA_VISIBLE_DEVICES=all
